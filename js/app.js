@@ -58,6 +58,7 @@ function openMenu() {
    topPage.addEventListener('click', setaPraCima);
    function setaPraCima(event) {
      event.preventDefault();
+     menuMobile.classList.remove('active');	   
      const setaPosicao = event.target;
      const classe = setaPosicao.getAttribute('class');
      const toTop = document.querySelector(classe);
